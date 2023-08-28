@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+
+    <title>Supra html</title>
+</head>
+<body>
+    <div class="container">
+
+        <section class="intro">
+            <div class="intro-img-container">
+                <img src="img/intro.png" alt="Фото машины" class="intro-img">
+            </div>
+            <div class="intro-info-container">
+                <h1 class="intro__title">2024 GR Supra</h1>
+                <h3 class="intro-price">price: <span>5000$</span></h3>
+            </div>
+        </section>
+
+        <main class="main">
+            <div class="main-tabs">
+                <div class="tabs-wrapper">
+                    <input class="input-tab" type="radio" name="tabs" id="tab-1" checked>
+                    <input class="input-tab" type="radio" name="tabs" id="tab-2">
+                    <label class="tab tab-1" for="tab-1">Tab 1</label>
+                    <label class="tab tab-2" for="tab-2">Tab 2</label>
+                    
+                    <div class="content content-1">
+                        <ul>
+                            <li>ultricies lacus sed turpis tincidunt</li>
+                            <li>lacus luctus accumsan</li>
+                            <li>ornare massa eget egestas purus viverra</li>
+                            <li>sit amet venenatis urna</li>
+                            <li>scelerisque</li>
+                        </ul>
+                    </div>
+                    <div class="content content-2">
+                        <ul>
+                            <li>Lorem, ipsum dolor.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                            <li>Lorem.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-slider">
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="carousel">
+                        <img src="/img/slider-1.png" alt="slide" class="carousel-img" draggable="false">
+                        <img src="/img/slider-2.png" alt="slide" class="carousel-img" draggable="false">
+                        <img src="/img/slider-3.png" alt="slide" class="carousel-img" draggable="false">
+                        <img src="/img/slider-4.png" alt="slide" class="carousel-img" draggable="false">
+                        <img src="/img/slider-5.png" alt="slide" class="carousel-img" draggable="false">
+                        <img src="/img/slider-6.png" alt="slide" class="carousel-img" draggable="false">
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </main>
+
+        <!-- Я пытался написать скрипт отправки формы на сервер но к сожалению у меня не работает расширение которым я пользовался ранее, поэтому проверить не могу. Оставляю на свой стах и риск -->
+        <!-- TODO: нужна проверка скрипта send.php -->
+        <form action="send.php" class="form">
+            <div class="form-input-container">
+                <input type="text" name="fio" class="form-name" placeholder="Ваше имя" required>
+                <input type="tel" name="tel" class="form-tel" placeholder="Ваш номер" required>
+            </div>
+            <input type="submit" value="Оформить заказ" class="form-btn">
+        </form>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
